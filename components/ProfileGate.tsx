@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Play } from "lucide-react";
+import { Play } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function ProfileGate() {
   return (
@@ -21,8 +22,13 @@ export function ProfileGate() {
               whileTap={{ scale: 0.98 }}
               className="flex flex-col items-center gap-4"
             >
-              <div className="flex h-36 w-36 items-center justify-center rounded bg-gradient-to-br from-[#e50914] via-[#751016] to-[#1d1d1d] ring-2 ring-transparent transition group-hover:ring-white sm:h-44 sm:w-44">
-                <Code2 size={72} strokeWidth={1.6} />
+              <div className="relative h-36 w-36 overflow-hidden rounded ring-2 ring-transparent transition group-hover:ring-white sm:h-44 sm:w-44">
+                <Image
+                  src="/profile.jpg"
+                  alt="Vanshika"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <span className="text-xl text-zinc-400 transition group-hover:text-white">
                 Vanshika (Developer)

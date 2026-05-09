@@ -2,6 +2,7 @@
 
 import { Search } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export function Navbar() {
@@ -39,8 +40,13 @@ export function Navbar() {
         </div>
         <div className="flex items-center gap-4">
           <Search size={19} className="text-zinc-200" />
-          <div className="flex h-8 w-8 items-center justify-center rounded bg-[#e50914] text-xs font-black">
-            VD
+          <div className="relative h-8 w-8 overflow-hidden rounded">
+            <Image
+              src="/profile.jpg"
+              alt="Vanshika"
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </nav>
