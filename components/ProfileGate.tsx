@@ -14,7 +14,9 @@ export function ProfileGate() {
         transition={{ duration: 0.5, ease: "easeOut" }}
         className="w-full max-w-5xl text-center"
       >
-        <h1 className="text-4xl font-medium tracking-tight sm:text-6xl">Who's Watching?</h1>
+        <h1 className="text-4xl font-black uppercase tracking-tight sm:text-6xl">
+          YOU ARE ENTERING VAN'S WORLD
+        </h1>
         <div className="mt-12 flex flex-col items-center justify-center gap-8 sm:flex-row">
           <Link href="/browse" className="group focus-ring rounded">
             <motion.div

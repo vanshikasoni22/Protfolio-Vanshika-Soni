@@ -28,6 +28,7 @@ export function WatchActions({ project }: { project: Project }) {
           >
             <Code2 size={18} />
             View Code
+
           </Link>
         ) : null}
         {project.links.caseStudy ? (

@@ -13,12 +13,12 @@ export default function BrowsePage() {
       <Navbar />
       <section className="relative min-h-[88vh] overflow-hidden">
         <Image
-          src={featured.assets.banner}
-          alt=""
+          src="/hero-collage.jpg"
+          alt="Vanshika Soni – Developer · AI · Machine Learning"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-center"
         />
         <div className="hero-vignette absolute inset-0" />
         <div className="relative z-10 flex min-h-[88vh] max-w-4xl flex-col justify-center px-5 pb-24 pt-28 sm:px-10 lg:px-16">

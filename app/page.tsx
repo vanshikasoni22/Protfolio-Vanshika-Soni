@@ -3,11 +3,11 @@ import { RetroComputer } from "@/components/RetroComputer";
 
 export default function EntryPage() {
   return (
-    <div className="bg-black">
+    <main>
       <RetroComputer />
-      <div id="profiles">
+      <div id="profiles" className="bg-[#050505]">
         <ProfileGate />
       </div>
-    </div>
+    </main>
   );
 }
